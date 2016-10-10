@@ -7,6 +7,14 @@ router.get('/', function(req, res, next) {
 });
 
 
+
+/* Contact page */
+router.get('/', function(req, res, next) {
+  res.render('/pages/contact.html', { title: 'Contact' });
+});
+
+
+
 /* Contact page */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
