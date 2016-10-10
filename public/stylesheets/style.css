@@ -1,6 +1,10 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/public/images/desk.jpg");
+
+
+
 }
 
 a {
@@ -14,7 +18,3 @@ h1 {
 
 }
 
-body {
-  background-image: url("public/images/desk.jpg");
-
-}
