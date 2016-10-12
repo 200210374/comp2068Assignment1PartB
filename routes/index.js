@@ -15,6 +15,35 @@ router.get('/', function(req, res, next) {
 
 
 
+'use strict';
+
+module.exports = function(app) {
+  app.get('/', function(req, res) {
+    res.render('pages/index');
+  });
+
+  app.get('/about', function(req, res) {
+    res.render('pages/about');
+  });
+
+
+  app.get('/contact', function(req, res) {
+    res.render('pages/contact');
+  });
+
+  app.get('/Projects', function(req, res) {
+    res.render('pages/Projects');
+  });
+
+  app.get('/Services', function(req, res) {
+    res.render('pages/Services');
+  });
+
+
+
+};
+
+
 /* Contact page */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -23,7 +52,7 @@ router.get('/', function(req, res, next) {
 
 
 
-module.exports = router;
+//module.exports = router;
 
 
 

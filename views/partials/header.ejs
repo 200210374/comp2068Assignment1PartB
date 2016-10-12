@@ -5,24 +5,42 @@ Author:Brandon Roy
 websitename:BrandonRoyPublicProfile
 
 description:
-THis is the header file that will show a content and probably a navbar on all pages.
+THis is the header file it will have a header that will have a navbar
 -->
 
 
+<!DOCTYPE html>
+<html lang="en">
 
 
-function Navbar()
-{
-var links=document.getElementById('Navbar').getElementsByTagName("a");
-var current = location.href;
-for (var i=0; i < links.length; i++)
-{
+<!--
+filename:Home
+Author:Brandon Roy
 
-if(links[i].href == current)
-{
+websitename:BrandonRoyPublicProfile
 
-links[i].href = "";
-links[i].className='linkstyle';
-}
-}
-}
+description:
+THis will be the home page and will have links and a navbar to go to different pages
+-->
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+</head>
+<body>
+
+
+
+<ul class=”nav navbar-nav pull-right”>
+    <li><a href=”/”>Home</a></li>
+    <li><a href=”/Contact”>Contacts</a></li>
+    <li><a href=”/Projects”>Projects</a></li>
+    <li><a href=”/Services”>Services</a></li><ul>
+
+
+
+
+</body>
+</html>

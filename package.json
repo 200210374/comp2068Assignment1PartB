@@ -13,5 +13,17 @@
     "express": "~4.13.4",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/200210374/comp2068Assignment1PartB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/200210374/comp2068Assignment1PartB/issues"
+  },
+  "homepage": "https://github.com/200210374/comp2068Assignment1PartB#readme",
+  "description": ""
 }
