@@ -18,22 +18,22 @@ app.get('/', function(req, res) {
 });
 
 // about page
-app.get('/about', function(req, res) {
+app.get('/', function(req, res) {
     res.render('pages/about');
 });
 
 
-app.get('/contact', function(req, res) {
+app.get('/', function(req, res) {
     res.render('pages/contact');
 });
-app.get('/projects', function(req, res) {
+app.get('/', function(req, res) {
     res.render('pages/projects');
 });
-app.get('/home', function(req, res) {
+app.get('/', function(req, res) {
     res.render('pages/home');
 });
 
-app.get('/services', function(req, res) {
+app.get('/', function(req, res) {
     res.render('pages/services');
 });
 
