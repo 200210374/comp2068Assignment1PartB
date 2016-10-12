@@ -13,6 +13,15 @@ router.get('/', function(req, res, next) {
   res.render('/pages/contact.html', { title: 'Contact' });
 });
 
+router.get('/', function(req, res, next) {
+  res.render('/pages/about.html', { title: 'Contact' });
+});
+router.get('/', function(req, res, next) {
+  res.render('/pages/projects.html', { title: 'Contact' });
+});
+router.get('/', function(req, res, next) {
+  res.render('/pages/servers.html', { title: 'Contact' });
+});
 
 
 'use strict';
