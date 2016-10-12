@@ -1,21 +1,9 @@
 
 
 
-var express = require('express');
-var app = express();
-app.use('/', function(req, res) {
-    res.send('Hello World');
-});
-app.listen(3000);
-console.log('Server running at http://localhost:3000/');
-module.exports = app;
 
-
-
-
-
-
-/*
+// server.js
+// load the things we need
 var express = require('express');
 var app = express();
 
@@ -38,52 +26,57 @@ app.get('/about', function(req, res) {
 app.get('/contact', function(req, res) {
     res.render('pages/contact');
 });
-
-
 app.get('/about', function(req, res) {
     res.render('pages/projects');
+});
+app.get('/about', function(req, res) {
+    res.render('pages/home');
 });
 
 app.get('/about', function(req, res) {
     res.render('pages/services');
 });
 
-app.get('/about', function(req, res) {
-    res.render('pages/home');
-});
 
 
 
-app.listen(8080);
+app.listen(3000);
+console.log('Port 3000');
 
-
-*/
 
 /*
 
-// ================================================================
-// get all the tools we need
-// ================================================================
 var express = require('express');
-var routes = require('/routes/index.js');
-var port = process.env.PORT || 3000;
-
 var app = express();
+app.use('/', function(req, res) {
+    res.send('Hello World');
+});
 
-// ================================================================
-// setup our express application
-// ================================================================
-app.use('/public', express.static(process.cwd() + '/public'));
-app.set('view engine', 'ejs');
+module.exports = function(app) {
+    app.get('/', function(req, res) {
+        res.render('pages/index');
+    });
 
-// ================================================================
-// setup routes
-// ================================================================
-routes(app);
+    app.get('/about', function(req, res) {
+        res.render('pages/about');
+    });
 
-// ================================================================
-// start our server
-// ================================================================
-app.listen(port, function() {
-    console.log('Server listening on port ' + port + '…');
-}); */
+
+    app.get('/contact', function(req, res) {
+        res.render('pages/contact');
+    });
+
+    app.get('/Projects', function(req, res) {
+        res.render('pages/Projects');
+    });
+
+    app.get('/Services', function(req, res) {
+        res.render('pages/Services');
+    });
+
+
+
+
+app.listen(3000);
+console.log('Server running at http://localhost:3000/')};
+//module.exports = app; */

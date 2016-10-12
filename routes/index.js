@@ -39,6 +39,9 @@ module.exports = function(app) {
     res.render('pages/Services');
   });
 
+  app.get('/home', function(req, res) {
+    res.render('pages/home');
+  });
 
 
 };
@@ -52,7 +55,7 @@ router.get('/', function(req, res, next) {
 
 
 
-//module.exports = router;
+module.exports = router;
 
 
 
