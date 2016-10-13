@@ -32,28 +32,28 @@ router.get('/', function(req, res, next) {
 
 module.exports = function(app) {
   app.get('/', function(req, res) {
-    res.render('pages/index');
+    res.render('views/index');
   });
 
   app.get('/about', function(req, res) {
-    res.render('pages/about');
+    res.render('views/about');
   });
 
 
   app.get('/contact', function(req, res) {
-    res.render('pages/contact');
+    res.render('views/contact');
   });
 
   app.get('/Projects', function(req, res) {
-    res.render('pages/Projects');
+    res.render('views/Projects');
   });
 
   app.get('/Services', function(req, res) {
-    res.render('pages/Services');
+    res.render('views/Services');
   });
 
   app.get('/home', function(req, res) {
-    res.render('pages/home');
+    res.render('views/home');
   });
 
 
