@@ -36,24 +36,24 @@ module.exports = function(app) {
   });
 
   app.get('/about', function(req, res) {
-    res.render('views/about');
+    res.render('about');
   });
 
 
   app.get('/contact', function(req, res) {
-    res.render('views/contact');
+    res.render('contact');
   });
 
   app.get('/Projects', function(req, res) {
-    res.render('views/Projects');
+    res.render('Projects');
   });
 
   app.get('/Services', function(req, res) {
-    res.render('views/Services');
+    res.render('Services');
   });
 
   app.get('/home', function(req, res) {
-    res.render('views/home');
+    res.render('home');
   });
 
 

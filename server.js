@@ -14,27 +14,27 @@ app.set('view engine', 'ejs');
 
 // index page
 app.get('/', function(req, res) {
-    res.render('pages/index');
+    res.render('index');
 });
 
 // about page
 app.get('/', function(req, res) {
-    res.render('views/about');
+    res.render('about');
 });
 
 
 app.get('/', function(req, res) {
-    res.render('views/contact');
+    res.render('contact');
 });
 app.get('/', function(req, res) {
-    res.render('views/projects');
+    res.render('projects');
 });
 app.get('/', function(req, res) {
-    res.render('views/home');
+    res.render('home');
 });
 
 app.get('/', function(req, res) {
-    res.render('views/services');
+    res.render('services');
 });
 
 
