@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('./partials/about', { title: 'about' });
+  res.render('views/about', { title: 'about' });
 });
 router.get('/', function(req, res, next) {
   res.render('views/projects', { title: 'projects' });
@@ -35,7 +35,9 @@ module.exports = function(app) {
     res.render('views/index');
   });
 
-
+  app.get('/about', function(req, res) {
+    res.render('views/about');
+  });
 
 
   app.get('/contact', function(req, res) {
@@ -52,11 +54,6 @@ module.exports = function(app) {
 
   app.get('/home', function(req, res) {
     res.render('views/home');
-  });
-
-
-  app.get('/about', function(req, res) {
-    res.render('./partials/about');
   });
 
 

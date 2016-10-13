@@ -19,22 +19,22 @@ app.get('/', function(req, res) {
 
 // about page
 app.get('/', function(req, res) {
-    res.render('about');
+    res.render('views/about');
 });
 
 
 app.get('/', function(req, res) {
-    res.render('contact');
+    res.render('views/contact');
 });
 app.get('/', function(req, res) {
-    res.render('projects');
+    res.render('views/projects');
 });
 app.get('/', function(req, res) {
-    res.render('home');
+    res.render('views/home');
 });
 
 app.get('/', function(req, res) {
-    res.render('services');
+    res.render('views/services');
 });
 
 
