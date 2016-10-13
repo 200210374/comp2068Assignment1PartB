@@ -10,17 +10,17 @@ router.get('/', function(req, res, next) {
 
 /* Contact page */
 router.get('/', function(req, res, next) {
-  res.render('/pages/contact.html', { title: 'Contact' });
+  res.render('/pages/contact', { title: 'Contact' });
 });
 
 router.get('/', function(req, res, next) {
-  res.render('/pages/about.html', { title: 'about' });
+  res.render('/pages/about', { title: 'about' });
 });
 router.get('/', function(req, res, next) {
-  res.render('/pages/projects.html', { title: 'projects' });
+  res.render('/pages/projects', { title: 'projects' });
 });
 router.get('/', function(req, res, next) {
-  res.render('/pages/services.html', { title: 'services' });
+  res.render('/pages/services', { title: 'services' });
 });
 
 
