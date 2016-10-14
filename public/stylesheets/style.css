@@ -1,10 +1,6 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url("/public/images/desk.jpg");
-
-
-
 }
 
 h1 {
@@ -18,3 +14,10 @@ pre {
 
 }
 
+
+
+title {
+
+  color:gray;
+
+}
