@@ -10,12 +10,26 @@ body {
   background-repeat: repeat-x;
 
 
+}
+
+nav {
+
+  border:1px solid black;  padding:2px;
+  color:blue;
+  text-align: center;
+}
 
 
 
-
+li {
+  text-align: center;
 
 }
+
+
+
+
+
 
 h1 {
   color: #00B7FF;
