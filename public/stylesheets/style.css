@@ -19,12 +19,18 @@ p{text-align: center;
 
 
 }
+a {text-align: center;}
+
+form {text-align: center;}
+
+
+
 
 
 pre {
 
   color: darkred;
-
+  text-align: center;
 }
 
 
