@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
   res.render('contact', { title: 'contact' });
 });
 
-router.get('about', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('about', { title: 'about' });
 });
 router.get('/', function(req, res, next) {
