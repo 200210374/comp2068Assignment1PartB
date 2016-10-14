@@ -28,45 +28,6 @@ router.get('/', function(req, res, next) {
 
 
 
-'use strict';
-
-module.exports = function(app) {
-  app.get('/', function(req, res) {
-    res.render('views/index');
-  });
-
-  app.get('about', function(req, res, next) {
-    res.render('about');
-  });
-
-
-  app.get('contact', function(req, res, next) {
-    res.render('contact');
-  });
-
-  app.get('Projects', function(req, res,next) {
-    res.render('Projects');
-  });
-
-  app.get('Services', function(req, res, next) {
-    res.render('Services');
-  });
-
-  app.get('home', function(req, res,next) {
-    res.render('home');
-  });
-
-
-};
-
-
-/* Contact page */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-
-
 
 module.exports = router;
 
