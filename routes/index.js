@@ -35,24 +35,24 @@ module.exports = function(app) {
     res.render('views/index');
   });
 
-  app.get('about', function(req, res) {
+  app.get('about', function(req, res, next) {
     res.render('about');
   });
 
 
-  app.get('contact', function(req, res) {
+  app.get('contact', function(req, res, next) {
     res.render('contact');
   });
 
-  app.get('Projects', function(req, res) {
+  app.get('Projects', function(req, res,next) {
     res.render('Projects');
   });
 
-  app.get('Services', function(req, res) {
+  app.get('Services', function(req, res, next) {
     res.render('Services');
   });
 
-  app.get('home', function(req, res) {
+  app.get('home', function(req, res,next) {
     res.render('home');
   });
 
